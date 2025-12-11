@@ -1,0 +1,62 @@
+<SCRIPT LANGUAGE='VBScript' RUNAT='Server'>
+
+'You can add special event handlers in this file that will get run automatically when
+'special Active Server Pages events occur. To create these handlers, just create a
+'subroutine with a name from the list below that corresponds to the event you want to
+'use. For example, to create an event handler for Session_OnStart, you would put the
+'following code into this file (without the comments):
+
+'Sub Session_OnStart
+'**Put your code here **
+'End Sub
+
+'EventName              Description
+'Session_OnStart        Runs the first time a user runs any page in your application
+'Session_OnEnd          Runs when a user's session times out or quits your application
+'Application_OnStart    Runs once when the first page of your application is run for the first time by any user
+'Application_OnEnd      Runs once when the web server shuts down
+
+</SCRIPT>
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+Sub Application_OnStart
+	'==Visual InterDev Generated - startspan==
+	'--Project Data Connection
+		Application("db_ConnectionString") = "Provider=SQLOLEDB.1;Persist Security Info=False;User ID=macro21;PASSWORD=San/saeksi69;Initial Catalog=macro21;Data Source=iwd05.uhost.co.kr;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=NOWFLY;Use Encryption for Data=False;Tag with column collation when possible=False;"
+		Application("db_ConnectionTimeout") = 3600
+	    Application("db_CommandTimeout") = 3600
+		Application("db_CursorLocation") = 3
+	    'Application("db_RuntimeUserName") = "macro21"
+		'Application("db_RuntimePassword") = "San/saeksi69"
+
+		'Application("db_ConnectionString") = "Provider=SQLOLEDB;User ID=sanparam;Password=ksmh5497;Initial Catalog=macro21;Data Source=192.168.0.10;"
+		'Application("db_ConnectionString") = "Provider=SQLOLEDB.1;Persist Security Info=False;User ID=sa;PASSWORD=micro@!_Db;Initial Catalog=MRO_DB;Data Source=localhost;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=NOWFLY;Use Encryption for Data=False;Tag with column collation when possible=False;"
+		'Application("db_ConnectionTimeout") = 3600
+		'Application("db_CommandTimeout") = 3600
+		'Application("db_CursorLocation") = 3
+		'Application("db_RuntimeUserName") = "sanparam"
+		'Application("db_RuntimePassword") = "ksmh5497"
+		'Application("db_RuntimeUserName") = "sa"
+		'Application("db_RuntimePassword") = "micro@!_Db"
+
+		
+		
+		Application("MACRO21_DSN_ConnectionString") = "Provider=SQLOLEDB.1;Persist Security Info=False;User ID=macro21;PASSWORD=San/saeksi69;Initial Catalog=macro21;Data Source=iwd05.uhost.co.kr;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=NOWFLY;Use Encryption for Data=False;Tag with column collation when possible=False;"
+		'Application("MACRO21_DSN_ConnectionString") = "Provider=SQLOLEDB;User ID=sanparam;Password=ksmh5497;Initial Catalog=macro21;Data Source=192.168.0.10;"
+		'Application("MACRO21_DSN_ConnectionString") = "Provider=SQLOLEDB.1;Persist Security Info=False;User ID=sa;PASSWORD=micro@!_Db;Initial Catalog=macro;Data Source=localhost;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=NOWFLY;Use Encryption for Data=False;Tag with column collation when possible=False;"
+		
+	'-- Project Data Environment
+		'Set DE = Server.CreateObject("DERuntime.DERuntime")
+		'Application("DE") = DE.Load(Server.MapPath("Global.ASA"), "_private/DataEnvironment/DataEnvironment.asa")
+	'==Visual InterDev Generated - endspan==
+		
+		application("root") = "ftp(0)192.168.0.11:D:\OneDrive\문서\Macro21/wwwhome/"
+		Application("MAIN_URL")="http://192.168.0.11/"
+		
+		'application("root") = "ftp(0)192.168.0.14:C:\Users\windf\OneDrive\����\Macro21/wwwhome/"
+		'Application("MAIN_URL")="http://192.168.0.14/"
+		
+		'application("root") = "ftp(0)localhost:C:\Users\windf\OneDrive\����\Macro21/wwwhome/"
+		'Application("MAIN_URL")="http://localhost/"
+
+End Sub
+</SCRIPT>
