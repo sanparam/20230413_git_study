@@ -162,7 +162,7 @@ function memo(target)
         <tr align="center">
 		  
 		  
-		  <!--top- "^^ 님 안녕하세요." -->
+		  <!--top- "** 님 안녕하세요." -->
 		  <td colspan="2" class="txt_white"> 
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
@@ -196,57 +196,7 @@ function memo(target)
 
     </td>
 	
-  <!--/tr>
   
-  
-</table>
-</td-->
-
-<!--td width="150"-->
-<!--search table-->		
-<!--form name="frm" action="../search/category_img.asp" method="POST" target="content">
-  <table valign="bottom", align="left" background="images_top/top_bg.gif" width="100%" border="0" cellspacing="0" cellpadding="0" height="79" class="txt-33">
-     <tr> 
-       <td valign="bottom" align="left" height="53">
-	      <select name="keyfield">
-          <option value="product" selected>제품명</option>
-          <option value="company">제조사</option>
-          <option value="pageno">페이지 번호</option>
-          </select>
-       </td>
-	 </tr>
-	 <tr>
-       <td valign="top" align="left" height="20">
-	  <input type="text" name="textfield" maxlength="30" size="15">
-	  <a href="javascript:searching('<%=session("flag")%>');">
-	  <img src="../../images_home/search_go.gif" alt="키워드를 넣고 검색하세요" border="0" width="25" height="18" align="absmiddle"></a>
-       </td>
-      </tr>
-    </table>
-   </form-->
-	  <!--search table end-->
-<!--/td-->
-  <!--td background="images_top/top_bg.gif"><!-- Search Google -->
-<!--center>
-<form method="get" action="http://www.google.co.kr/custom" target="content">
-<table bgcolor="#000000" width ="150">
-<tr><td nowrap="nowrap" valign="top" align="left" height="13">
-<a href="http://www.google.com/">
-<img src="http://www.google.com/logos/Logo_25blk.gif" border="0" alt="Google" align="middle"></img></a>
-<input type="text" name="q" size="12" maxlength="255" value=""></input>
-<input type="submit" name="sa" value="검색"></input>
-<input type="hidden" name="client" value="pub-7139684911602044"></input>
-<input type="hidden" name="forid" value="1"></input>
-<input type="hidden" name="ie" value="EUC-KR"></input>
-<input type="hidden" name="oe" value="EUC-KR"></input>
-<input type="hidden" name="cof" value="GALT:#003324;GL:1;DIV:#66CC99;VLC:FF6600;AH:center;BGC:C5DBCF;LBGC:73B59C;ALC:000000;LC:000000;T:330033;GFNT:333300;GIMP:333300;LH:50;LW:50;L:http://www.google.com/images/logo.gif;S:http://;LP:1;FORID:1;"></input>
-<input type="hidden" name="hl" value="ko"></input>
-</td></tr></table>
-</form>
-</center>
-<!-- Search Google -->
-
-  <!-- /td-->
   </tr>
   <tr>
   	<td height="1"></td>
