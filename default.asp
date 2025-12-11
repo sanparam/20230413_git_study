@@ -1,8 +1,8 @@
-<html>
+ï»¿<html>
 <head>
 	<!--meta name="verify-v1" content="7L0BSCiGtZUDtLJBumM4yfrHz5GLQqiJ7aLFc1Amg+4=" />
 	<meta name="verify-v1" content="lz4zqsnl3ZePkx3NN7XWypu7BNP9r+yJlCidgzkM/HU=" /-->
-	<title>Localhost_MRO Àü¿ë¸ÅÀå</title>
+	<title>Localhost_MRO ì „ìš©ë§¤ìž¥</title>
 	<link rel="stylesheet" href="top.css" type="text/css">
                                                       
 </head>
@@ -20,3 +20,4 @@
   <!--</div>
 </div>-->
 </html>
+>>>>>>> 7b7e272 (Convert default.asp to UTF-8)
