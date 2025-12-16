@@ -69,7 +69,7 @@ set cn = Server.CreateObject("ADODB.Connection")
 		sql ="select * from corp_class where parent_code is null order by code "		
 	corp_class_rs.Open sql
 		
-	''// ê¸°íšìƒí’ˆ...//''	
+	''// ±âÈ¹»óÇ°...//''	
 	set kepco_plan = server.CreateObject ("adodb.recordset")
 		kepco_plan.ActiveConnection = cn
 		
@@ -101,7 +101,7 @@ set cn = Server.CreateObject("ADODB.Connection")
   })();
 
 </script>
-<!-- ê¸°íšìƒí’ˆ ì‹œì‘ -->
+<!-- ±âÈ¹»óÇ° ½ÃÀÛ -->
 
 <style type="text/css"> 
 <!-- 
@@ -150,7 +150,7 @@ if(NS || IE) action = window.setInterval("heartBeat()",1);
 //-->
 </script>
 
-<!-- ê¸°íšìƒí’ˆ ë -->
+<!-- ±âÈ¹»óÇ° ³¡ -->
 
 <script language="JavaScript">
 <!--
@@ -169,7 +169,7 @@ function show(iObject,bool)
 //-->
 function check()
 { 
-	alert("MRO ë§¤ì¥ ê°€ì… ì§€ì‚¬/ì§€ì ë§Œì´ ì‚¬ìš©í•˜ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸í•œ í›„ ì´ìš©í•˜ì„¸ìš”");
+	alert("MRO ¸ÅÀå °¡ÀÔ Áö»ç/ÁöÁ¡¸¸ÀÌ »ç¿ëÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. ·Î±×ÀÎÇÑ ÈÄ ÀÌ¿ëÇÏ¼¼¿ä");
 	//document.location.href="check.asp";
 	
 }
@@ -217,14 +217,14 @@ function webphone(target)
 	window.open (target, "webphone", 'width=500,height=450,left=100,top=100,status=yes,toolbar=no,scrollbars=1,resizable=0');
 }
 
-// ì—‘ì…€ì¹´íƒˆë¡œê·¸ íŒì—…ì°½ // 
+// ¿¢¼¿Ä«Å»·Î±× ÆË¾÷Ã¢ // 
 function xls_catalog()
 {
 		window.open("/folder/pds/catalog/catalog.asp?path=main", "xls_catalog",'Width=370,Height=170,left=20,top=20,toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=0');
 		
 }
 
-// ì¶”ì„íŠ¹ì§‘ íŒì—…ì°½ // 
+// Ãß¼®Æ¯Áı ÆË¾÷Ã¢ // 
 
 function a()
 {
@@ -241,7 +241,7 @@ function chsuk_catalog()
 function searching(flag) {
     
 	if (frm.textfield.value == '' ) {
-		alert('ê²€ìƒ‰ì–´ë¥¼ ë„£ì–´ì£¼ì„¸ìš”.');
+		alert('°Ë»ö¾î¸¦ ³Ö¾îÁÖ¼¼¿ä.');
 		frm.textfield.focus();
 	}
 	
@@ -258,7 +258,7 @@ function searching(flag) {
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000" onLoad="MM_preloadImages('images_home/button_go_ov.gif')" onLoad="MM_preloadImages('images_home/icon_buy.gif','images_home/icon_tag.gif','images_home/icon_point.gif')" align = "center">
-<!-- ê¸°íšìƒí’ˆ ì‹œì‘ -->
+<!-- ±âÈ¹»óÇ° ½ÃÀÛ -->
 <div class="wrapper" >
   <div class="content">
 <div id=floater style="left:760px; top:1px; width:120px; height:383px; z-index:10">
@@ -298,8 +298,8 @@ function searching(flag) {
                 <div align="center">
                   <p><font class=txt-66>
 						<b>
-							<% if kepco_plan("maker") <> "" or isnull(kepco_plan("maker")) then  'ì œì¡°ì‚¬ê°€ ì—†ëŠ”ê²½ìš° ê³µì¥ê·¸ë¦¼ ì•ˆë‚˜ì˜´~%>
-								<img src="images_home/icon_factory.gif" width="19" height="15" alt="ì´ë¯¸ì§€ ì—†ìŒ">&nbsp;<% =kepco_plan("maker") %>
+							<% if kepco_plan("maker") <> "" or isnull(kepco_plan("maker")) then  'Á¦Á¶»ç°¡ ¾ø´Â°æ¿ì °øÀå±×¸² ¾È³ª¿È~%>
+								<img src="images_home/icon_factory.gif" width="19" height="15" alt="ÀÌ¹ÌÁö ¾øÀ½">&nbsp;<% =kepco_plan("maker") %>
 							<% end if %>
 						</b>
 					</font></p>
@@ -317,7 +317,7 @@ function searching(flag) {
         
   </table>
   </div>
-<!-- ê¸°íšìƒí’ˆ ë -->
+<!-- ±âÈ¹»óÇ° ³¡ -->
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td>
@@ -336,7 +336,7 @@ function searching(flag) {
 	  <table width="160" border="0" cellspacing="0" cellpadding="0" height="131">
         <tr> 
           <td bgcolor="cccccc" valign="top">
-		  	<!--ê²€ìƒ‰, ë°˜ë³µêµ¬ë§¤, ìª½ì§€, í¬ì¸íŠ¸-->
+		  	<!--°Ë»ö, ¹İº¹±¸¸Å, ÂÊÁö, Æ÷ÀÎÆ®-->
 			<!--#include file="include/search.asp"-->
 		  </td>
         </tr>
@@ -370,7 +370,7 @@ function searching(flag) {
           <td align="center"> 
             
 			
-			<!--Categories // menu ë‚´ìš©-->
+			<!--Categories // menu ³»¿ë-->
 			<table width="90%" border="0" cellspacing="0" cellpadding="0" class="txt-33">
 				<% do while not corp_class_rs.EOF %>
 			<tr>
@@ -392,7 +392,7 @@ function searching(flag) {
 				corp_class_rs1.Open sql
 				
 				
-				'í•˜ìœ„ë¶„ë¥˜ê°€ ì—†ìœ¼ë©´..
+				'ÇÏÀ§ºĞ·ù°¡ ¾øÀ¸¸é..
 				if corp_class_rs1.EOF then
 					Response.Write "<table>"
 				else 
@@ -429,7 +429,7 @@ function searching(flag) {
 				set corp_class_rs = nothing	
 				%>		
             </table>
-			<!--Categories // menu ë‚´ìš© ë-->
+			<!--Categories // menu ³»¿ë ³¡-->
 			
 			
           </td>
@@ -438,12 +438,12 @@ function searching(flag) {
           <td>&nbsp;</td>
         </tr>
         <tr> 
-          <!--ê°€ì…íšŒì›ì‚¬ // title image-->
+          <!--°¡ÀÔÈ¸¿ø»ç // title image-->
 		  <td height="30"><img src="images_home/left_menu_02.gif" width="170" height="25"></td>
         </tr>
         <tr> 
           <td align="center"> 
-            <!--ê°€ì…íšŒì›ì‚¬ // ì»¨í…ì¸  ë‚´ìš©-->
+            <!--°¡ÀÔÈ¸¿ø»ç // ÄÁÅÙÃ÷ ³»¿ë-->
             <%sql = "select customnm from kepco_user k join custom c on k.customid = c.customid " & _
 					"where k.customid <> 'nowfly' and k.approval = 'Y' order by customnm "    
 					set member = Server.CreateObject("ADODB.Recordset")
@@ -460,10 +460,10 @@ function searching(flag) {
 			%>
 			<table width="90%" border="0" cellspacing="0" cellpadding="0" class="txt-33">
               <tr> 
-                <td colspan="2">í˜„ì¬ ê°€ì… íšŒì›ì‚¬ :</td>
+                <td colspan="2">ÇöÀç °¡ÀÔ È¸¿ø»ç :</td>
               </tr>
               <tr> 
-                <td align="center">ì´ <font size="4"><Big><b><%=member.RecordCount%></b></big></font>&nbsp;ê°œì‚¬</td>
+                <td align="center">ÃÑ <font size="4"><Big><b><%=member.RecordCount%></b></big></font>&nbsp;°³»ç</td>
                 <td height="42">&nbsp;
 				<%'if session("id") = "" then%>
 	                <!--a href="javascript:Login('/frame.asp?main_url=member.asp');" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('go','','images_home/button_go_ov.gif',1)"-->
@@ -474,26 +474,26 @@ function searching(flag) {
                 </td>
               </tr>
             </table>
-			<!--ê°€ì…íšŒì›ì‚¬ // ì»¨í…ì¸  ë‚´ìš© ë-->
+			<!--°¡ÀÔÈ¸¿ø»ç // ÄÁÅÙÃ÷ ³»¿ë ³¡-->
           </td>
         </tr>
         <tr> 
           <td>&nbsp;</td>
         </tr>
 	
-	<!--ì´ë‹¬ì˜ ìš°ìˆ˜íšŒì›ì‚¬ // title image -->
+	<!--ÀÌ´ŞÀÇ ¿ì¼öÈ¸¿ø»ç // title image -->
         <tr> 
         <td align="center"> 
           <table width="170" border="0" cellspacing="0" cellpadding="0">
             <tr>
-	      <!--ì—‘ì…€ì¹´íƒˆë¡œê·¸-->
+	      <!--¿¢¼¿Ä«Å»·Î±×-->
 	                          <td align=left><a href="javascript:xls_catalog();"><img src="images_home/phone_img.gif" width="160" height="110" border="0"></a></td>
             </tr><br>
 	  </table>			          
         </td>
         </tr>
       </table>
-      <!--left menu //  Categories, ê°€ì…íšŒì›ì‚¬, ì´ë‹¬ì˜ ìš°ìˆ˜ íšŒì›ì‚¬ end-->
+      <!--left menu //  Categories, °¡ÀÔÈ¸¿ø»ç, ÀÌ´ŞÀÇ ¿ì¼ö È¸¿ø»ç end-->
 	  <!--left 1 end-->
 	</td>
   </tr> 
@@ -502,7 +502,7 @@ function searching(flag) {
 	  <!--left 2-->
 	                <table width="170" border="0" cellspacing="0" cellpadding="0">
                       <tr> 
-                        <!--ìë£Œì‹¤-->
+                        <!--ÀÚ·á½Ç-->
                         <td align=left><a href="/pds/list.asp"><img src="images_home/data_img.gif" width="160" height="80" border="0" ></a></td>
                       </tr>
                       <tr>
@@ -511,14 +511,17 @@ function searching(flag) {
 					  <tr>
                          <td align=left><a href="javascript:chsuk_catalog();"><img src="folder/pds/chsuk/product.gif" width="160" height="60" border="0"></a></td>
                       </tr>
-                      
+                      <!--tr> 
+                        <!--°øÁ¤°Å·¡À§¿øÈ¸-->
+                        <!--td align=left><a href="http://ftc.go.kr/info/bizinfo/communicationList.jsp"><img src="FTC_LINK.gif" width="160" height="80" border="0" ></a></td>
+                      </tr-->
 					  <!--tr> 
-                        <!--ê³µê¸‰ì‚¬ ë¡œê·¸ì¸-->
+                        <!--°ø±Ş»ç ·Î±×ÀÎ-->
                         <!--td align=left> 
                           <%if session("code") = "" then%><a href="javascript:Login2();">
-                          <img src="images_home/login02.gif" width="160" height="70" border="0" alt="ê³µê¸‰ì‚¬ ë¡œê·¸ì¸">
+                          <img src="images_home/login02.gif" width="160" height="70" border="0" alt="°ø±Ş»ç ·Î±×ÀÎ">
                           <%else%><a href="/login/logout2.asp">
-                          <img src="images_home/login03.gif" width="160" height="70" border="0" alt="ê³µê¸‰ì‚¬ ë¡œê·¸ì•„ì›ƒ">
+                          <img src="images_home/login03.gif" width="160" height="70" border="0" alt="°ø±Ş»ç ·Î±×¾Æ¿ô">
                           <%end if%>
                         </td>
                       </tr-->
@@ -557,11 +560,11 @@ function searching(flag) {
                     <tr>
                       <td width="253"><img src="images_home/img_main0303.jpg" width="253" height="121"></td>
                       <td>
-<!--ê³µì§€ì‚¬í•­ : ë³´ì—¬ì§€ëŠ” ê¸€ìì˜ ìˆ˜ëŠ” [ê³µì§€]í¬í•¨, ë„ì–´ì“°ê¸° í¬í•¨í•˜ì—¬ í•œê¸€ 25ìë¡œ ì œí•œí•©ë‹ˆë‹¹  						ìŠì§€ë§ˆì‹œê³ ...ë˜í•œ, ê³µì§€ëŠ” 3ê°œë§Œ ë³´ì—¬ì§‘ë‹ˆë‹¹.......ì•Œ'ìª„!!!ìˆ˜ê±°!-->
+<!--°øÁö»çÇ× : º¸¿©Áö´Â ±ÛÀÚÀÇ ¼ö´Â [°øÁö]Æ÷ÇÔ, ¶ç¾î¾²±â Æ÷ÇÔÇÏ¿© ÇÑ±Û 25ÀÚ·Î Á¦ÇÑÇÕ´Ï´ç  						ÀØÁö¸¶½Ã°í...¶ÇÇÑ, °øÁö´Â 3°³¸¸ º¸¿©Áı´Ï´ç.......¾Ë'ÂÇ!!!¼ö°Å!-->
 						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="txt_white">
                           <tr> 
                             <!--td> 
-                              <!--ê³§ë°”ë¡œ ì˜¬ë¼ê°‘ë‹ˆë‹¤...-->
+                              <!--°ğ¹Ù·Î ¿Ã¶ó°©´Ï´Ù...-->
                               <!--object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="318" height="50">
                                 <param name=movie value="images_home/top_text.swf">
                                 <param name=quality value=high>
@@ -584,7 +587,7 @@ function searching(flag) {
                               <table width="90%" border="0" cellspacing="0" cellpadding="0" class="txt_white">
                                 <% if rs.EOF = true then %>
 										<br>
-										<tr><td height="20">ë“±ë¡ëœ ê³µì§€ì‚¬í•­ì´ ì—†ìŠµë‹ˆë‹¤.</td></tr>
+										<tr><td height="20">µî·ÏµÈ °øÁö»çÇ×ÀÌ ¾ø½À´Ï´Ù.</td></tr>
                                 <% else %>
 										<tr>
 										<td height="10">&nbsp;</td>
@@ -593,7 +596,7 @@ function searching(flag) {
 									<% i = 1 %>
 	
 										<tr>
-										<td height="20">[ê³µì§€]<a href="javascript:gonggi('<%=rs("no")%>')"><font color="#FFFF99"><% =rs("title") %></font></a></td>
+										<td height="20">[°øÁö]<a href="javascript:gonggi('<%=rs("no")%>')"><font color="#FFFF99"><% =rs("title") %></font></a></td>
 										</tr>
 									 <% rs.MoveNext 
 									  response.flush %>
@@ -601,7 +604,7 @@ function searching(flag) {
 									
                                 <% end if %>
                                 
-                                <!-- ëª¨ì–´ ì“°ì‹¤ë•Œ ì“°ì‹œê¸¸..--><%' if i = 1 THEN %><!--a href="javascript:announclist()"--><%' end if%><!--more..-->
+                                <!-- ¸ğ¾î ¾²½Ç¶§ ¾²½Ã±æ..--><%' if i = 1 THEN %><!--a href="javascript:announclist()"--><%' end if%><!--more..-->
                               </table>
                             </td>
                           </tr>
@@ -628,7 +631,7 @@ function searching(flag) {
 	  <table width="580" border="0" cellspacing="12" cellpadding="0">
         <tr> 
           <td> 
-<!--**************Best Collection ìœ— ìƒí’ˆ start***************************-->
+<!--**************Best Collection À­ »óÇ° start***************************-->
 			<table width="556" border="0" cellspacing="0" cellpadding="0">
               <tr> 
                 <td width="111" bgcolor="cccccc" valign="bottom" align="left"><img src="images_home/main_title01.gif" width="103" height="61"> 
@@ -657,8 +660,8 @@ function searching(flag) {
                     </tr>
                     <tr>
 						<td align="center" class="txt-66">
-							<% if product_rs("maker") <> "" or isnull(product_rs("maker")) then  'ì œì¡°ì‚¬ê°€ ì—†ëŠ”ê²½ìš° ê³µì¥ê·¸ë¦¼ ì•ˆë‚˜ì˜´~%>
-								<img src="images_home/icon_factory.gif" width="19" height="15" alt="ì œì¡°ì‚¬">&nbsp;<% =product_rs("maker") %>
+							<% if product_rs("maker") <> "" or isnull(product_rs("maker")) then  'Á¦Á¶»ç°¡ ¾ø´Â°æ¿ì °øÀå±×¸² ¾È³ª¿È~%>
+								<img src="images_home/icon_factory.gif" width="19" height="15" alt="Á¦Á¶»ç">&nbsp;<% =product_rs("maker") %>
 							<% end if%>	
 						</td>
                     </tr>
@@ -675,7 +678,7 @@ function searching(flag) {
         </tr>
         <tr>
           <td>
-<!--------------Best Collection ì•„ë˜ ìƒí’ˆ start-------------------------------------------->
+<!--------------Best Collection ¾Æ·¡ »óÇ° start-------------------------------------------->
 			<table width="556" border="0" cellspacing="0" cellpadding="0">
 				<tr>
 					<%' for i=1 to 5	
@@ -697,8 +700,8 @@ function searching(flag) {
 			              </tr>
 			              <tr> 
 			                <td align="center" class="txt-66">
-								<% if iventgood_rs_insert("maker") <> "" or isnull(iventgood_rs_insert("maker")) then  'ì œì¡°ì‚¬ê°€ ì—†ëŠ”ê²½ìš° ê³µì¥ê·¸ë¦¼ ì•ˆë‚˜ì˜´~%>
-									<img src="images_home/icon_factory.gif" width="19" height="15" alt="ì œì¡°ì‚¬">&nbsp;<% =iventgood_rs_insert("maker") %>
+								<% if iventgood_rs_insert("maker") <> "" or isnull(iventgood_rs_insert("maker")) then  'Á¦Á¶»ç°¡ ¾ø´Â°æ¿ì °øÀå±×¸² ¾È³ª¿È~%>
+									<img src="images_home/icon_factory.gif" width="19" height="15" alt="Á¦Á¶»ç">&nbsp;<% =iventgood_rs_insert("maker") %>
 								<% end if %>
 							</td>
 			              </tr>
@@ -727,7 +730,7 @@ function searching(flag) {
 		
 		
 		
-<!--**************new & cool ìƒí’ˆ start***************************-->
+<!--**************new & cool »óÇ° start***************************-->
 		<table width="556" border="0" cellspacing="0" cellpadding="0">
           <tr>
 			<td width="112" bgcolor="cccccc" valign="bottom" align="left"><img src="images_home/main_title02.gif" width="77" height="69"> 
@@ -743,7 +746,7 @@ function searching(flag) {
 				<td width="111" align="center" valign="top">
                   
 				  
-				  <!-- -------ìƒí’ˆëŒë¦¬ëŠ”ê³³------------- -->
+				  <!-- -------»óÇ°µ¹¸®´Â°÷------------- -->
 				  <table border="0" cellspacing="0" cellpadding="0" width="111">
                     <tr>
 					  <td align="center">
@@ -762,8 +765,8 @@ function searching(flag) {
                     </tr>
                     <tr>
 						<td align="center" class="txt-66">
-							<% if iventgood_rs_new("maker") <> "" or isnull(iventgood_rs_new("maker")) then  'ì œì¡°ì‚¬ê°€ ì—†ëŠ”ê²½ìš° ê³µì¥ê·¸ë¦¼ ì•ˆë‚˜ì˜´~%>
-								<img src="images_home/icon_factory.gif" width="19" height="15" alt="ì œì¡°ì‚¬">&nbsp;<% =iventgood_rs_new("maker") %>
+							<% if iventgood_rs_new("maker") <> "" or isnull(iventgood_rs_new("maker")) then  'Á¦Á¶»ç°¡ ¾ø´Â°æ¿ì °øÀå±×¸² ¾È³ª¿È~%>
+								<img src="images_home/icon_factory.gif" width="19" height="15" alt="Á¦Á¶»ç">&nbsp;<% =iventgood_rs_new("maker") %>
 							<% end if %>	
 						</td>
                     </tr>
@@ -781,7 +784,7 @@ function searching(flag) {
 		  </td>
 	    </tr>
 	    </table>
-<!--------------------------new & cool ìƒí’ˆ end--------------------------------->
+<!--------------------------new & cool »óÇ° end--------------------------------->
 				
 				
 				
@@ -789,7 +792,7 @@ function searching(flag) {
         </tr>
 		<tr>
 		  <td valign="bottom">
-<!--------------------------new & cool ìƒí’ˆ í•˜ë‹¨ Start--------------------------------->
+<!--------------------------new & cool »óÇ° ÇÏ´Ü Start--------------------------------->
 			<table border="0" cellpadding="0" cellspacing="0" class="txt-33">
 			<tr>
                 <% 
@@ -798,7 +801,7 @@ function searching(flag) {
 				<td width="112" align="center" valign="top">
                   
 				  
-				  <!-- -------ìƒí’ˆëŒë¦¬ëŠ”ê³³_í•˜ë‹¨------------- -->
+				  <!-- -------»óÇ°µ¹¸®´Â°÷_ÇÏ´Ü------------- -->
 				  <table border="0" cellspacing="0" cellpadding="0" width="111">
                     <tr>
 					  <td align="center">
@@ -817,8 +820,8 @@ function searching(flag) {
                     </tr>
                     <tr>
 						<td align="center" class="txt-66">
-							<% if iventgood_rs_new_add("maker") <> "" or isnull(iventgood_rs_new_add("maker")) then  'ì œì¡°ì‚¬ê°€ ì—†ëŠ”ê²½ìš° ê³µì¥ê·¸ë¦¼ ì•ˆë‚˜ì˜´~%>
-								<img src="images_home/icon_factory.gif" width="19" height="15" alt="ì œì¡°ì‚¬">&nbsp;<% =iventgood_rs_new_add("maker") %>
+							<% if iventgood_rs_new_add("maker") <> "" or isnull(iventgood_rs_new_add("maker")) then  'Á¦Á¶»ç°¡ ¾ø´Â°æ¿ì °øÀå±×¸² ¾È³ª¿È~%>
+								<img src="images_home/icon_factory.gif" width="19" height="15" alt="Á¦Á¶»ç">&nbsp;<% =iventgood_rs_new_add("maker") %>
 							<% end if %>	
 						</td>
                     </tr>
@@ -838,7 +841,7 @@ function searching(flag) {
 		  </td>
 	    </tr>
 		</table>
-<!--------------------------new & cool ìƒí’ˆ end--------------------------------->
+<!--------------------------new & cool »óÇ° end--------------------------------->
 				
 				
 				
