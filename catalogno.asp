@@ -70,7 +70,7 @@ function send(temp) {
 				b_cycle = true
 			
 				if (frm.tqt[i].value < frm.limitqty[i].value ) {
-					alert ("최소주문수량보다 작습니다.1");
+					alert ("Oh! 최소주문수량보다 작습니다.1");
 					frm.tqt[i].focus();
 					
 					return;
