@@ -70,7 +70,7 @@ function send(temp) {
 				b_cycle = true
 			
 				if (frm.tqt[i].value < frm.limitqty[i].value ) {
-					alert ("ÃÖ¼ÒÁÖ¹®¼ö·®º¸´Ù ÀÛ½À´Ï´Ù.1");
+					alert ("ìµœì†Œì£¼ë¬¸ìˆ˜ëŸ‰ë³´ë‹¤ ì‘ìŠµë‹ˆë‹¤.1");
 					frm.tqt[i].focus();
 					
 					return;
@@ -85,7 +85,7 @@ function send(temp) {
 			
 		}
 		else {
-			alert ( "Á¦Ç°À» ¼±ÅÃÇÏ¼¼¿ä ..." );						
+			alert ( "ì œí’ˆì„ ì„ íƒí•˜ì„¸ìš” ..." );						
 			return;			
 		}
 	
@@ -94,12 +94,12 @@ function send(temp) {
 		if ( frm.ck_1.checked ) {
 		
 			if (frm.tqt.value < frm.limitqty.value ) {
-				alert("ÃÖ¼ÒÁÖ¹®¼ö·®º¸´Ù ÀÛ½À´Ï´Ù.");
+				alert("Oh! ìµœì†Œì£¼ë¬¸ìˆ˜ëŸ‰ë³´ë‹¤ ì‘ìŠµë‹ˆë‹¤.");
 				return;
 			}
 		}
 		else {
-			alert ( "Á¦Ç°À» ¼±ÅÃÇÏ¼¼¿ä ..." );			
+			alert ( "ì œí’ˆì„ ì„ íƒí•˜ì„¸ìš” ..." );			
 			return;
 		}
 	}
@@ -136,7 +136,7 @@ function js_check_1(i){
 	var frm=document.i_ck;
 	if ( frm.ck_1.checked ) {
 	
-	alert("Ãë±ŞÁß´ÜµÈ Ç°¸ñÀÔ´Ï´Ù.");
+	alert("ì·¨ê¸‰ì¤‘ë‹¨ëœ í’ˆëª©ì…ë‹ˆë‹¤.");
 	history.back(+1);	
 					
 	}        
@@ -147,9 +147,9 @@ function js_check_1(i){
 <body bgcolor="#ffffff" topmargin="20" leftmargin="0" marginheight="20" marginwidth="0" vlink="#8e8e8e" link="#8e8e8e" alink="#8e8e8e">
 
 <table border=0 cellpadding=0 cellspacing=0 width=700>
-<tr><td><font color="red"><b>&nbsp;&nbsp;&nbsp;¢Ë Catalog No. : M-<%=ls_catalogno%></b></font></td></tr>                 
+<tr><td><font color="red"><b>&nbsp;&nbsp;&nbsp;â–¦ Catalog No. : M-<%=ls_catalogno%></b></font></td></tr>                 
   <%'-------------------------------------------------                 
-	' ºĞ·ù º¸ÀÌ±â                 
+	' ë¶„ë¥˜ ë³´ì´ê¸°                 
 	'-------------------------------------------------                 
 	set class_rs = Server.CreateObject("ADODB.Recordset")                 
 		class_rs.ActiveConnection = cn                 
@@ -210,7 +210,7 @@ function js_check_1(i){
 	                 
 	end if                 
 	'-------------------------------------------------                 
-	' end : ºĞ·ù º¸ÀÌ±â                 
+	' end : ë¶„ë¥˜ ë³´ì´ê¸°                 
 	'-------------------------------------------------                 
 	%>                 
   <tr>                 
@@ -219,7 +219,7 @@ function js_check_1(i){
   <tr><td colspan=2 height=5>&nbsp;</td></tr>                 
   <tr>                 
     <td width=300 align=center valign=top>                 
-	<!--- Á¦Ç° ÀÌ¹ÌÁö --->                 
+	<!--- ì œí’ˆ ì´ë¯¸ì§€ --->                 
 	<% if catalog("img_path") <> "" then  
 	
 	capital_path = catalog("img_path")
@@ -268,17 +268,17 @@ function js_check_1(i){
 	<td valign=top align=center>                 
 	  <table border=0 cellpadding=3 cellspacing=0 width=450>                 
 	    <tr>                 
-		  <td class=subtitlebold height="22"><!--- Á¦Ç°¸í ---><%=catalog("catalognm")%></td>                 
+		  <td class=subtitlebold height="22"><!--- ì œí’ˆëª… ---><%=catalog("catalognm")%></td>                 
 		</tr>                 
 		<tr>
 		  <td>
-		    <!--- Á¦Á¶»ç/¹è¼Û¹æ¹ı/°áÁ¦¹æ¹ı/Ã·ºÎÆÄÀÏ Å×ÀÌºí ½ÃÀÛ --->
+		    <!--- ì œì¡°ì‚¬/ë°°ì†¡ë°©ë²•/ê²°ì œë°©ë²•/ì²¨ë¶€íŒŒì¼ í…Œì´ë¸” ì‹œì‘ --->
 		    <table border=0 cellpadding=0 cellspacing=0>
 			  <tr>
 			    <td><img src="images03/table_top1.gif" width="442" height="21" alt="" border="0"></td>
 			  </tr>
 			  <tr>
-			    <td background="images03/back_white.gif" class=bodyheight>&nbsp;&nbsp;<font color="#808080">Á¦Á¶»ç :</font> &nbsp;&nbsp;<%=catalog("maker")%></td>
+			    <td background="images03/back_white.gif" class=bodyheight>&nbsp;&nbsp;<font color="#808080">ì œì¡°ì‚¬ :</font> &nbsp;&nbsp;<%=catalog("maker")%></td>
 			  </tr>
 			  <tr>
 			    <td><img src="images03/dot_gray.gif" width="442" height="1" alt="" border="0"></td>
@@ -290,13 +290,13 @@ function js_check_1(i){
 			    <td><img src="images03/dot_gray.gif" width="442" height="1" alt="" border="0"></td>
 			  </tr>
 			    <!--<tr>
-			    <td background="images03/back_white.gif" class=bodyheight>&nbsp;&nbsp;<font color="#808080">°áÁ¦¹æ¹ı :</font> &nbsp;&nbsp;ÀÏ°ı°áÁ¦</td>
+			    <td background="images03/back_white.gif" class=bodyheight>&nbsp;&nbsp;<font color="#808080">ê²°ì œë°©ë²• :</font> &nbsp;&nbsp;ì¼ê´„ê²°ì œ</td>
 			  </tr>-->
 			  <tr>
 			    <td><img src="images03/dot_gray.gif" width="442" height="1" alt="" border="0"></td>
 			  </tr>
 			  <tr>
-			    <td background="images03/back_gray.gif" class=bodyheight>&nbsp;&nbsp;<font color="#808080">Ã·ºÎÆÄÀÏ :</font> &nbsp;&nbsp;
+			    <td background="images03/back_gray.gif" class=bodyheight>&nbsp;&nbsp;<font color="#808080">ì²¨ë¶€íŒŒì¼ :</font> &nbsp;&nbsp;
 					<% do while not df_catalog.EOF %>
 						&nbsp;&nbsp;&nbsp;<li><a href="<%=df_catalog("file_path")%>"><img src="images03/disk.gif" width="13" height="13" alt="" border="0">&nbsp;<%=df_catalog("title")%></a>
 					<% df_catalog.MoveNext()
@@ -307,7 +307,7 @@ function js_check_1(i){
 			    <td><img src="images03/bottom_gray.gif" width="442" height="2" alt="" border="0"></td>
 			  </tr>
 			</table>
-			<!--- Á¦Á¶»ç/¹è¼Û¹æ¹ı/°áÁ¦¹æ¹ı/Ã·ºÎÆÄÀÏ Å×ÀÌºí ³¡ --->
+			<!--- ì œì¡°ì‚¬/ë°°ì†¡ë°©ë²•/ê²°ì œë°©ë²•/ì²¨ë¶€íŒŒì¼ í…Œì´ë¸” ë --->
 			<br><br>
 			
 		  </td>
@@ -321,12 +321,12 @@ function js_check_1(i){
                       
   <tr>                 
 	<td colspan=2 class=bodyblack>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images03/spec.gif" width="141" height="24" alt="" border="0">                 
-				&nbsp;&nbsp;&nbsp;&nbsp;¾Æ·¡ °¡°İÀº                 
+				&nbsp;&nbsp;&nbsp;&nbsp;ì•„ë˜ ê°€ê²©ì€                 
 				<font color=blue> <% if catalog("vat") = "Y" then %>                 
-					 VAT Æ÷ÇÔ                 
+					 VAT í¬í•¨                 
 				<% else %>                 
-					VAT º°µµ                 
-				<% end if %>&nbsp; Âü°í¿ëÀÓ</font>                 
+					VAT ë³„ë„                 
+				<% end if %>&nbsp; ì°¸ê³ ìš©ì„</font>                 
     </td>                 
   </tr>                 
   <%                 
@@ -342,11 +342,11 @@ function js_check_1(i){
   <% if catalog("formtype")= "1" then %>                 
   <tr>                 
     <td colspan=2 align="center">                 
-	  <!--- Á¦Ç°»ç¾ç Å×ÀÌºí ½ÃÀÛ --->                 
+	  <!--- ì œí’ˆì‚¬ì–‘ í…Œì´ë¸” ì‹œì‘ --->                 
 	  <table border=0 cellpadding=3 cellspacing=1 width=720 bgcolor="#aaaaaa">                 
 	    <tr>                 
-		  <td bgcolor="#dbdbdb" class=bodyblack align=center width='10%'>Á¦Ç°¸í</td>                 
-		  <td bgcolor="#dbdbdb" class=bodyblack align=center width='5%'>±Ô°İ</td>                 
+		  <td bgcolor="#dbdbdb" class=bodyblack align=center width='10%'>ì œí’ˆëª…</td>                 
+		  <td bgcolor="#dbdbdb" class=bodyblack align=center width='5%'>ê·œê²©</td>                 
 		                  
 		   <%	j = 0 ' sub column count location ...
 				n = 0 ' ?
@@ -386,10 +386,10 @@ function js_check_1(i){
 			%>
 		     
 		                   
-		  <td bgcolor="#dbdbdb" class=bodyblack align=center width='5%'>°¡°İ</td>                 
-		  <td bgcolor="#dbdbdb" class=bodyblack align=center width='7%'>ÃÖ¼ÒÁÖ¹®¼ö·®</td>                 
+		  <td bgcolor="#dbdbdb" class=bodyblack align=center width='5%'>ê°€ê²©</td>                 
+		  <td bgcolor="#dbdbdb" class=bodyblack align=center width='7%'>ìµœì†Œì£¼ë¬¸ìˆ˜ëŸ‰</td>                 
 		  <% If session("code") = "" Then %>                 
-		  <td bgcolor="#dbdbdb" class=bodyblack align=center width='3%'>¼±ÅÃ</td>                 
+		  <td bgcolor="#dbdbdb" class=bodyblack align=center width='3%'>ì„ íƒ</td>                 
 		  <% End If %>                 
 		</tr>                 
 		<form NAME="i_ck">                 
@@ -407,7 +407,7 @@ function js_check_1(i){
 					SizeInfo.Open                 
 					                 
 				li_loop = 0                 
-				no_order_flag = true		' ³³±â³ª ±İ¾×ÀÌ ¾ø´Ù¸é [¹ßÁÖ]¸¦ ³ªÅ¸³»Áö ¾Ê±â À§ÇØ »ç¿ëµÈ flag                 
+				no_order_flag = true		' ë‚©ê¸°ë‚˜ ê¸ˆì•¡ì´ ì—†ë‹¤ë©´ [ë°œì£¼]ë¥¼ ë‚˜íƒ€ë‚´ì§€ ì•Šê¸° ìœ„í•´ ì‚¬ìš©ëœ flag                 
 				                 
 				                 
 				                 
@@ -423,7 +423,7 @@ function js_check_1(i){
 			    do while i < n                 
 			                     
 			    	if sizeinfo(i+3) = "" then                 
-			    		temp_str = "¡¤"                 
+			    		temp_str = "Â·"                 
 			    	else                 
 			    		temp_str = sizeinfo(i+3)                  
 			    	end if                 
@@ -451,8 +451,8 @@ function js_check_1(i){
                  
 				                 
 				if sizeinfo.Fields("b").value = "0" or sizeinfo.fields("b") = ""  or isnull(sizeinfo.fields("b")) then                 
-				   Response.write "<td valign='middle' align=center width='5%' class='bodyblack' bgcolor='#ffffff' align='center'> " & "°ßÀû°¡" & "</td>"			                 
-				   no_order_flag = false		' ±İ¾×ÀÌ ¾ø´Ù¸é [¹ßÁÖ]¸¦ ³ªÅ¸³»Áö ¾Ê±â À§ÇØ »ç¿ëµÈ flag                 
+				   Response.write "<td valign='middle' align=center width='5%' class='bodyblack' bgcolor='#ffffff' align='center'> " & "ê²¬ì ê°€" & "</td>"			                 
+				   no_order_flag = false		' ê¸ˆì•¡ì´ ì—†ë‹¤ë©´ [ë°œì£¼]ë¥¼ ë‚˜íƒ€ë‚´ì§€ ì•Šê¸° ìœ„í•´ ì‚¬ìš©ëœ flag                 
 				else                 
 					Response.write "<td valign='middle' width='5%' class='bodyblack' bgcolor='#ffffff' align='center'>" &  formatnumber(sizeinfo.Fields("b").value,0) & catalog("moneynm") & "</td>"	                 
 				end if                 
@@ -469,7 +469,7 @@ function js_check_1(i){
 				  if pend_good("pend") = "Y" then                 
 				Response.Write "<INPUT type='checkbox'"                  
 				response.write "disabled=True"                 
-				response.write " name='ck_" & ls_loop & "' onclick='js_check_1(" & ls_loop & ")'><br><font color='red'>Ãë±ŞÁß´Ü</font></td>"                 
+				response.write " name='ck_" & ls_loop & "' onclick='js_check_1(" & ls_loop & ")'><br><font color='red'>ì·¨ê¸‰ì¤‘ë‹¨</font></td>"                 
 				Else                 
 				Response.Write "<INPUT type='checkbox' name='ck_" & ls_loop & "' onclick='js_check(" & ls_loop & ")'></td>"                 
 				end if                  
@@ -488,7 +488,7 @@ function js_check_1(i){
 			%>
 			</form>
 	  </table>                 
-	  <!--- Á¦Ç°»ç¾ç Å×ÀÌºí ³¡ --->                 
+	  <!--- ì œí’ˆì‚¬ì–‘ í…Œì´ë¸” ë --->                 
 	</td>                 
   </tr>                   
   <% end if %>                 
@@ -497,21 +497,21 @@ function js_check_1(i){
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
    <tr align="left" valign="middle"> 
 	<td style="padding-left:250px" height="17">
-	[<a href="javascript:history.back(-1)">µÚ·Î</a>]	                 
+	[<a href="javascript:history.back(-1)">ë’¤ë¡œ</a>]	                 
 	                 
 	<% if not supplier.EOF then%>
-	      [<a href="/history/default.asp?main=m&catalogno=<%=ls_catalogno%>">Á¦Ç° ¼öÁ¤</a>]
+	      [<a href="/history/default.asp?main=m&catalogno=<%=ls_catalogno%>">ì œí’ˆ ìˆ˜ì •</a>]
     <%end if%>
     
     <% if no_order_flag = true  then %>
-          [<a href="javascript:send('request');">ÁÖ  ¹®</a>]
+          [<a href="javascript:send('request');">ì£¼  ë¬¸</a>]
     <% end if %>
     
-		  [<a href="javascript:send('quote');">°ßÀû ¿äÃ»</a>]                 
+		  [<a href="javascript:send('quote');">ê²¬ì  ìš”ì²­</a>]                 
 </td>                 
 </tr>                
 <tr>
-<!--- »ó¼¼Á¤º¸ Å×ÀÌºí ½ÃÀÛ --->
+<!--- ìƒì„¸ì •ë³´ í…Œì´ë¸” ì‹œì‘ --->
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<table border=0 cellpadding=0 cellspacing=20>
 			  <tr>
@@ -537,7 +537,7 @@ function js_check_1(i){
 			</table>
 			
 </tr>
-<!--- »ó¼¼Á¤º¸ Å×ÀÌºí ³¡ --->
+<!--- ìƒì„¸ì •ë³´ í…Œì´ë¸” ë --->
 <tr align="center"><td> <font color="blue"><b>&nbsp;&nbsp;&nbsp;Twitter Q&A ;</b></font>&nbsp;<a href="http://twitter.com/share" class="twitter-share-button" 
  	data-count="none" data-via="windfrommount" data-related="windfrommount:option"></a>
  	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -604,7 +604,7 @@ function js_check_1(i){
   </tr>
   <tr>	
     <td align=center>
-	<% If InStr(class_rs("full_name"),"temp_140627 ±ÛÀÚ¼öº¸´Ù Å©´Ù")> 0 Then %>
+	<% If InStr(class_rs("full_name"),"temp_140627 ê¸€ììˆ˜ë³´ë‹¤ í¬ë‹¤")> 0 Then %>
 	<!--#include file="include/macro21_1.htm"-->
 	<% Else %>
 	<!--#include file="include/macro21.htm"-->
