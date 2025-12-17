@@ -14,12 +14,12 @@ cn.Open Application("db_ConnectionString")
 
 <html>
 <head>
-<title>(ì£¼)ë§¤í¬ë¡œ21-MROì „ìš©ë§¤ì¥</title>
+<title>(ÁÖ)¸ÅÅ©·Î21-MROÀü¿ë¸ÅÀå</title>
 <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
 <link rel="stylesheet" href="top.css" type="text/css">
 
 <script language="JavaScript">
-<!-- ì—¬ê¸´ ì£¼ì„ì²˜ë¦¬ë¶€ë¶„ì¸ê°€?
+<!-- ¿©±ä ÁÖ¼®Ã³¸®ºÎºĞÀÎ°¡?
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
@@ -46,7 +46,7 @@ function MM_swapImage() { //v3.0
 function searching(flag) {
     
 	if (frm.textfield.value == '' ) {
-		alert('ê²€ìƒ‰ì–´ë¥¼ ë„£ì–´ì£¼ì„¸ìš”.');
+		alert('°Ë»ö¾î¸¦ ³Ö¾îÁÖ¼¼¿ä.');
 		frm.textfield.focus();
 	}
 	
@@ -111,19 +111,19 @@ function memo(target)
 			
 			<table width="255" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td><!--home--><a href="index_body.asp" target="content"><img src="images_top/utility_01.gif" width="33" height="13" border="0" alt="MRO ì „ìš©ë§¤ì¥ ë©”ì¸ í˜ì´ì§€ë¡œ"></a></td>
+                <td><!--home--><a href="index_body.asp" target="content"><img src="images_top/utility_01.gif" width="33" height="13" border="0" alt="MRO Àü¿ë¸ÅÀå ¸ŞÀÎ ÆäÀÌÁö·Î"></a></td>
                  <%if session("id") = "" then%>
-				<td><!--log in--><a href="javascript:Login_('/frame.asp?main_url=history/default.asp');"><img src="images_top/utility_02.gif" width="44" height="13" alt="ë¡œê·¸ì¸" border="0"></a></td>
+				<td><!--log in--><a href="javascript:Login_('/frame.asp?main_url=history/default.asp');"><img src="images_top/utility_02.gif" width="44" height="13" alt="·Î±×ÀÎ" border="0"></a></td>
                  <%else%>
-				<td><a href="/login/logout.asp" target="_top" ><img src="images_top/utility_02_out.gif" width="44" height="13" alt="ë¡œê·¸ì•„ì›ƒ" border="0"></a></td>
+				<td><a href="/login/logout.asp" target="_top" ><img src="images_top/utility_02_out.gif" width="44" height="13" alt="·Î±×¾Æ¿ô" border="0"></a></td>
 				 <%end if%>
-				<td><!--íšŒì›ê°€ì…-->
+				<td><!--È¸¿ø°¡ÀÔ-->
 				<%if session("id") = "" then%>
 				  <a href="manage/member_inSE_ke.asp" target="content" ><img src="images_top/utility_04.gif" width="54" height="13" alt="Registration" border="0"></a>
 				 <% End If %>
 				</td>
-				<td><!--site map--><a href="sitemap.asp" target="content"><img src="images_top/utility_03.gif" width="48" height="13" alt="ì‚¬ì´íŠ¸ë§µ" border="0"></a></td>
-                <td><!--http://www.mangchi.co.kr<a href="/aboutus/index.html" target="content"><img src="images_top/utility_05.gif" width="76" height="13" alt="(ì£¼)ë§¤í¬ë¡œ21 íšŒì‚¬ì†Œê°œ" border="0"></a>--></td>
+				<td><!--site map--><a href="sitemap.asp" target="content"><img src="images_top/utility_03.gif" width="48" height="13" alt="»çÀÌÆ®¸Ê" border="0"></a></td>
+                <td><!--http://www.mangchi.co.kr<a href="/aboutus/index.html" target="content"><img src="images_top/utility_05.gif" width="76" height="13" alt="(ÁÖ)¸ÅÅ©·Î21 È¸»ç¼Ò°³" border="0"></a>--></td>
               </tr>
             </table>
 			
@@ -135,26 +135,27 @@ function memo(target)
           <td bgcolor="#000000" height="30"> 
             <table width="650" border="0" cellspacing="0" cellpadding="0" class="txt_white">
               <tr valign="middle" align="center"> 
-                <td><a href="info.asp"  target="content"><b>í†µí•©êµ¬ë§¤</b>ì†Œê°œ</a>&nbsp;&nbsp;&nbsp</td>
+                <td><a href="info.asp"  target="content"><b>ÅëÇÕ±¸¸Å</b>¼Ò°³</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                 <td><%if session("id") = "" then%>
 					 <a href="javascript:Login_('/frame.asp?main_url=history/default.asp');">
 					<%else%>
 					 <a href="history/default.asp" target="content">
 					<%end if%>
-					My Page &nbsp;&nbsp;&nbsp;
+					My Page &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					</a>
 				</td>
-<!--                <td><a href="auction/re_good_list.asp" target="content">ì…ì°°ì‹ ì²­</a></td> -->
+<!--                <td><a href="auction/re_good_list.asp" target="content">ÀÔÂû½ÅÃ»</a></td> -->
                 <td><!--a href="mailto:webmaster@macro21.com"--><%if session("id") = "" then%>
 		   			<a href="javascript:Login3();">
 		  			<%else%>
 		  			<a href="offer/write.asp" target="content">
 		  			<%end if%>
-					&nbsp;ë¬¸ ì˜&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;¹® ÀÇ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					</a></td>
-                <td><a href="commerce/basket_main.asp" target="content">&nbsp;ì¹´íŠ¸(ì¥ë°”êµ¬ë‹ˆ)</a>&nbsp;&nbsp;&nbsp;</td>
-                <td><a href="javascript:window.open('http://192.168.0.11:81')">ì„¼ì„œ/ìŠ¤ìœ„ì¹˜ì „ìš©ë§¤ì¥</a>&nbsp;&nbsp;</td>
-				<td><a href="javascript:window.open('http://192.168.0.11:8089')">ì‚¬ì—…ì•ˆë‚´</a></td>
+                <td><a href="commerce/basket_main.asp" target="content">&nbsp;Ä«Æ®(Àå¹Ù±¸´Ï)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <!--<td><a href="javascript:window.open('http://www.mangchi.co.kr')">¼¾¼­/½ºÀ§ÄªÀü¿ë¸ÅÀå</a></td>//-->
+				<td><a href="javascript:window.open('http://mangchi.macro21.com')">¼¾¼­/½ºÀ§Ä¡ Àü¿ë¸ÅÀå</a></td>
+				<td><a href="javascript:window.open('http://jboard.macro21.com')">»ç¾÷¾È³»</a></td>
 			   </tr>
             </table>
           </td>
@@ -162,15 +163,15 @@ function memo(target)
         <tr align="center">
 		  
 		  
-		  <!--top- "** ë‹˜ ì•ˆë…•í•˜ì„¸ìš”." -->
+		  <!--top- "±ôµ­ÀÌ´Ô ¾È³çÇÏ¼¼¿ä." -->
 		  <td colspan="2" class="txt_white"> 
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td width="180" class="txt_white" align="center">
-				<!--ìª½ì§€ì‹œì‘-->
+				<!--ÂÊÁö½ÃÀÛ-->
                 <!--#include file="memo/inc.asp" -->
                 <% cnt = new_count(Session("ID")) %>
-                <% if  cnt >= 1 then 'ìƒˆë¡œìš´ ìª½ì§€ê°€ ìˆì„ë•Œë§Œ ë‚˜ì˜¨ë‹¤.%>
+                <% if  cnt >= 1 then '»õ·Î¿î ÂÊÁö°¡ ÀÖÀ»¶§¸¸ ³ª¿Â´Ù.%>
 					
 					<% set new_cnt= server.CreateObject("ADODB.Recordset")
 						new_cnt.ActiveConnection = cn
@@ -178,12 +179,12 @@ function memo(target)
 						sql = "select top 1 n.*, m.usernm as from_name from note n join muser m on n.[from] = m.customid where [to] = '" & session("id") & "' and [read] = 'N' order by date desc "
 						new_cnt.Open sql
 					%>
-					<a href="javascript:memo('memo/detail.asp?no=<%=new_cnt("no")%>')">ìƒˆ ìª½ì§€<%=cnt%>ê°œ ë„ì°©&nbsp;<img SRC="images_top/new_ani.gif" border="0" WIDTH="21" HEIGHT="9"></a>
+					<a href="javascript:memo('memo/detail.asp?no=<%=new_cnt("no")%>')">»õ ÂÊÁö<%=cnt%>°³ µµÂø&nbsp;<img SRC="images_top/new_ani.gif" border="0" WIDTH="21" HEIGHT="9"></a>
 				<% end if %>	
-				<!--ìª½ì§€ ë-->				  
+				<!--ÂÊÁö ³¡-->				  
                 <td class="txt_white">&nbsp;
                 <%if session("id") <> "" then%>&quot;
-		   		  <%=Session("UserName")%>ë‹˜ ì•ˆë…•í•˜ì„¸ìš”.&quot;
+		   		  <%=Session("UserName")%>´Ô ¾È³çÇÏ¼¼¿ä.&quot;
 		   		<%end if%>
                 </td>
               </tr>
@@ -196,7 +197,57 @@ function memo(target)
 
     </td>
 	
+  <!--/tr>
   
+  
+</table>
+</td-->
+
+<!--td width="150"-->
+<!--search table-->		
+<!--form name="frm" action="../search/category_img.asp" method="POST" target="content">
+  <table valign="bottom", align="left" background="images_top/top_bg.gif" width="100%" border="0" cellspacing="0" cellpadding="0" height="79" class="txt-33">
+     <tr> 
+       <td valign="bottom" align="left" height="53">
+	      <select name="keyfield">
+          <option value="product" selected>Á¦Ç°¸í</option>
+          <option value="company">Á¦Á¶»ç</option>
+          <option value="pageno">ÆäÀÌÁö ¹øÈ£</option>
+          </select>
+       </td>
+	 </tr>
+	 <tr>
+       <td valign="top" align="left" height="20">
+	  <input type="text" name="textfield" maxlength="30" size="15">
+	  <a href="javascript:searching('<%=session("flag")%>');">
+	  <img src="../../images_home/search_go.gif" alt="Å°¿öµå¸¦ ³Ö°í °Ë»öÇÏ¼¼¿ä" border="0" width="25" height="18" align="absmiddle"></a>
+       </td>
+      </tr>
+    </table>
+   </form-->
+	  <!--search table end-->
+<!--/td-->
+  <!--td background="images_top/top_bg.gif"><!-- Search Google -->
+<!--center>
+<form method="get" action="http://www.google.co.kr/custom" target="content">
+<table bgcolor="#000000" width ="150">
+<tr><td nowrap="nowrap" valign="top" align="left" height="13">
+<a href="http://www.google.com/">
+<img src="http://www.google.com/logos/Logo_25blk.gif" border="0" alt="Google" align="middle"></img></a>
+<input type="text" name="q" size="12" maxlength="255" value=""></input>
+<input type="submit" name="sa" value="°Ë»ö"></input>
+<input type="hidden" name="client" value="pub-7139684911602044"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="ie" value="EUC-KR"></input>
+<input type="hidden" name="oe" value="EUC-KR"></input>
+<input type="hidden" name="cof" value="GALT:#003324;GL:1;DIV:#66CC99;VLC:FF6600;AH:center;BGC:C5DBCF;LBGC:73B59C;ALC:000000;LC:000000;T:330033;GFNT:333300;GIMP:333300;LH:50;LW:50;L:http://www.google.com/images/logo.gif;S:http://;LP:1;FORID:1;"></input>
+<input type="hidden" name="hl" value="ko"></input>
+</td></tr></table>
+</form>
+</center>
+<!-- Search Google -->
+
+  <!-- /td-->
   </tr>
   <tr>
   	<td height="1"></td>
