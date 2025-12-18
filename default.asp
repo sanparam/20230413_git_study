@@ -2,13 +2,13 @@
 <head>
 	<meta name="verify-v1" content="7L0BSCiGtZUDtLJBumM4yfrHz5GLQqiJ7aLFc1Amg+4=" />
 	<meta name="verify-v1" content="lz4zqsnl3ZePkx3NN7XWypu7BNP9r+yJlCidgzkM/HU=" />
-	<title> (Лё╪)К╖╓М│╛К║°21 - MRO Л═└Л ╘К╖╓Л·╔</title>
+	<title> (аж)╦ее╘╥н21 - MRO юЭ©К╦еюЕ</title>
                                                       
 </head>
 <!--<body>
-SQL Injection Л∙┘Л└╠Л╫■К⌠°К║° Л⌡╧Л┌╛Л²╢М┼╦ Л═░Й╡─Л╓▒Л≈░ Л·┬Л┼╣К▀┬К▀╓.<br>
-Л║╟Л├█М·┬ Л═∙Л┐│КЁ╣Й╣╛М∙≤Й╡═Л┼╣К▀┬К▀╓.<br>
-Лё└Л├║М∙╘К▀┬К▀╓
+SQL Injection ╬г╪╨дз╣Е╥н ю╔╩Гюлф╝ а║╟каъ©║ юж╫ю╢о╢ы.<br>
+а╤╪схВ а╓╩С╨╧╠╦го╟з╫ю╢о╢ы.<br>
+ак╪шгу╢о╢ы
 </body>-->
 <!--<div class="wrapper" >
   <div class="content">-->
